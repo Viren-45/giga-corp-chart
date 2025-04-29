@@ -2,11 +2,11 @@
   <div :class="['min-h-screen relative transition-colors duration-700', darkMode ? 'bg-gradient-to-br from-black via-gray-900 to-black' : 'bg-gray-50']">
     
     <!-- Fixed Glassmorphic Navbar -->
-    <nav class="fixed top-0 left-0 w-full backdrop-blur-md bg-white/30 border-b border-white/20 shadow-md z-50 flex items-center justify-between px-8 py-4">
+    <nav class="fixed top-0 left-0 w-full backdrop-blur-md bg-white/30 border-b border-white/20 shadow-md z-50 flex flex-wrap md:flex-nowrap items-center justify-between px-6 md:px-8 py-3 md:py-4 space-y-2 md:space-y-0">
       
       <!-- Left: Title -->
-      <div :class="['w-1/4 text-2xl font-extrabold transition-colors duration-300', darkMode ? 'text-white' : 'text-gray-800']">
-        Giga Corp Organizational Chart
+      <div :class="['w-1/4 text-2xl md:text-2xl sm:text-base md:text-center sm:text-center xs:text-center font-extrabold transition-colors duration-300', darkMode ? 'text-white' : 'text-gray-800']">
+        Organizational Chart
       </div>
 
       <!-- Center: Zoom Controls -->
@@ -62,8 +62,8 @@
     </div>
 
     <!-- Instructions  -->
-    <div v-if="!loading && chartData" :class="['fixed top-24 right-4 p-4 rounded-lg backdrop-blur-md shadow-lg z-40 transition-all', darkMode ? 'bg-black/80 text-white' : 'bg-white/40 text-gray-800']">
-      <div class="text-md">
+    <div v-if="!loading && chartData" :class="['fixed top-24 right-4 md:right-4 md:top-28 p-4 rounded-lg backdrop-blur-md shadow-lg z-40 transition-all', darkMode ? 'bg-black/80 text-white' : 'bg-white/40 text-gray-800']">
+      <div class="text-md md:text-sm sm:text-sm">
         <p class="font-semibold mb-2">Controls:</p>
         <ul class="space-y-1">
           <li>🖱️ Drag to pan the chart</li>
